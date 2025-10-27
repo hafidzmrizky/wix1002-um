@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class Q6 {
 
-    public static double fahrenheitToCelcius(double fahrenheit) {
+    public static double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit - 32) * 5 / 9;
     }
 
@@ -28,9 +28,9 @@ public class Q6 {
         System.out.print("Enter the final temperature in Fahrenheit: ");
         finalTemp = scanner.nextDouble();
 
-        // fahrenheit -> celcius
-        initialTemp = fahrenheitToCelcius(initialTemp);
-        finalTemp = fahrenheitToCelcius(finalTemp);
+        // fahrenheit -> Celsius
+        initialTemp = fahrenheitToCelsius(initialTemp);
+        finalTemp = fahrenheitToCelsius(finalTemp);
 
         Q = M * (finalTemp - initialTemp) * 4184;
         System.out.printf("The energy needed is %.6e\n", Q);
