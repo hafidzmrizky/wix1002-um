@@ -125,7 +125,7 @@ Hafidz Muhammad Rizky (24084524) - Artificial Intelligence
     |----------------|----------------|
     | 1    | START   |
     | 2    | DECLARE int[] numbers = new int[10];<br>DECLARE randomGenerator AS Random;<br>DECLARE oddCount = 0, evenCount = 0; |
-    | 3    | LOOP FOR int b = 0; b < numbers.length; b++<br>&nbsp;&nbsp;&nbsp;&nbsp;numbers[b] = numbers[b] = randomGenerator.nextInt(9, 100) + 1;<br>ENDFOR  |
+    | 3    | LOOP FOR int b = 0; b < numbers.length; b++<br>&nbsp;&nbsp;&nbsp;&nbsp;numbers[b] = numbers[b] = randomGenerator.nextInt(91) + 10;<br>ENDFOR  |
     | 4    | LOOP FOR int a = 0; a < numbers.length; a++;<br>&nbsp;&nbsp;&nbsp;&nbsp;IF numbers[a] % 2 == 1 THEN<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;oddCount++;<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;evenCount++;<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>ENDFOR  |
     | 5    | PRINT(“Odd Count: “ + oddCount);<br>PRINT(“Even Count: “ + evenCount); | 
     | 6    | END | 
@@ -199,7 +199,7 @@ Hafidz Muhammad Rizky (24084524) - Artificial Intelligence
     |----------------|----------------|
     | 1    | START   |
     | 2    | DECLARE int[] randomNumbers = new int[5];<br>DECLARE / Instantiating randomGenerator AS Random; |
-    | 3    | LOOP FOR int a = 0; a < randomNumbers.length; a++<br>&nbsp;&nbsp;&nbsp;&nbsp;randomNumbers[a] = randomGenerator.nextInt(9, 100) + 1;<br>ENDFOR  |
+    | 3    | LOOP FOR int a = 0; a < randomNumbers.length; a++<br>&nbsp;&nbsp;&nbsp;&nbsp;randomNumbers[a] = randomGenerator.nextInt(100) + 1;<br>ENDFOR  |
     | 4    | LOOP FOR int i = 0; i < randomNumbers.length; i++<br>&nbsp;&nbsp;&nbsp;&nbsp;FOR int x = i + 1; x < randomNumbers.length; x++<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IF randomNumbers[x] > randomNumbers[i] THEN<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int iValue = randomNumbers[i];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomNumbers[i] = randomNumbers[x];<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;randomNumbers[x] = iValue;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDFOR<br>ENDFOR  |
     | 5    | PRINT(“Random Numbers (Sorted): “ + ARRAY TO STRING of randomNumbers);  |
     | 6    | END  |
@@ -217,7 +217,7 @@ Hafidz Muhammad Rizky (24084524) - Artificial Intelligence
     | Number       | Process     |
     |----------------|----------------|
     | 1    | START   |
-    | 2    | DECLARE randomGenerator AS Random (new Random());<br>DECLARE int randomNumber = randomGenerator.NextInt(100) + 1;<br>DECLARE int guess = 0; |
+    | 2    | DECLARE randomGenerator AS Random (new Random());<br>DECLARE int randomNumber = randomGenerator.nextInt(100) + 1;<br>DECLARE int guess = 0; |
     | 3    | DO: <br>&nbsp;&nbsp;&nbsp;&nbsp;PRINT(“Your Guess: ”);<br>&nbsp;&nbsp;&nbsp;&nbsp;guess = INPUT;<br>&nbsp;&nbsp;&nbsp;&nbsp;IF (guess == randomNumber) THEN<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT(“Congratulations, you’re right”);<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE IF (guess > randomNumber) THEN<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT(“Guess is too high”);<br>&nbsp;&nbsp;&nbsp;&nbsp;ELSE<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT(“Guess is too low”);<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>WHILE (guess != randomNumber)  |
     | 4    | END  |
 
