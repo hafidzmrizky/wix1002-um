@@ -20,6 +20,12 @@ public class L3Q1 {
         int b = scanner.nextInt();
         System.out.print("Enter the operand: ");
         operand = scanner.next().charAt(0);
+        if (operand == '/' || operand == '%') {
+            if (b == 0) {
+                System.out.println("Can't be divided by 0");
+                System.exit(0);
+            }
+        }
         String result = switch (operand) {
             case '+' -> String.valueOf(a + b);
             case '-' -> String.valueOf(a - b);
@@ -34,5 +40,4 @@ public class L3Q1 {
             System.out.println(a + " " + operand + " "+ b + " = " + result);
         }
     }
-    
 }

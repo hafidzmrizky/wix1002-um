@@ -14,7 +14,8 @@ public class L3Q2 {
     
     public static void main(String[] args) {
         Random rand = new Random();
-        int randNumber = rand.nextInt(6);
+        final int MAX_NUMBER = 5;
+        int randNumber = rand.nextInt(MAX_NUMBER + 1);
         String toWord = switch (randNumber) {
             case 0 -> "Zero";
             case 1 -> "One";
