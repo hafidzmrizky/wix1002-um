@@ -15,6 +15,10 @@ public class L3Q3 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the Sales Volume: ");
         int salesVolume = scanner.nextInt();
+        if (salesVolume < 0) {
+            System.out.println("Invalid sales volume");
+            System.exit(0);
+        }
         double result = salesVolume > 1000 ? salesVolume * 12.5/100 : 
                         salesVolume > 500 ? salesVolume * 10/100 :
                         salesVolume > 100 ? salesVolume * 7.5/100 :
